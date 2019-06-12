@@ -120,21 +120,22 @@ button {
 }
 
 button:hover { font-weight: 600; }
-button:hover i { margin-right: 20px; }
+button:hover .sm-icon { margin-right: 16px; }
 
 button:focus {
     outline: none;
 }
 
-i {
-    color: #EB4D4D;
+.sm-icon {
+    fill: #EB4D4D;
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 8px;
     font-size: 32px;
     line-height: 1;
     vertical-align: text-top;
-    margin-top: -4px;
     transition: margin 0.3s;
+    width: 24px;
+    height: 24px;
 }
 
 .btn-new { top: 45px;}
@@ -163,6 +164,7 @@ i {
     text-align: center;
     font-weight: 300;
     cursor: pointer;
+    letter-spacing: 1.2px;
 }
 
 .how-to:hover {
