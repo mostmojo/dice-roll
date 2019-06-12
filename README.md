@@ -7,3 +7,7 @@
 - The player can choose to **Hold**, which means that his **round** score gets added to his **global** score. After that, it's the next player's turn
 - The first player to reach 100 points on **global** score wins the game
 - **Try it out [here](https://mostmojo.github.io/dice-roll/)** 🚀
+
+<p align="center">
+  <img width="420" height="220" src="https://res.cloudinary.com/mostmojo/image/upload/v1560334213/dice.png">
+</p>
