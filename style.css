@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 .clearfix::after {
@@ -80,7 +80,7 @@ body {
     color: #EB4D4D;
     top: -7px;
     right: 10px;
-    
+
 }
 
 .player-current-box {
@@ -152,3 +152,22 @@ i {
 
 .winner { background-color: #f7f7f7; }
 .winner .player-name { font-weight: 300; color: #EB4D4D; }
+
+.how-to {
+    position: absolute;
+    bottom: 62px;
+    left: 457px;
+    text-transform: uppercase;
+    color: #ddd;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.how-to:hover {
+    font-weight: 600;
+    color: #EB4D4D;
+    transform: translateY(-2px);
+    transition: 0.2s ease;
+}
