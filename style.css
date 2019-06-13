@@ -173,3 +173,17 @@ button:focus {
     transform: translateY(-2px);
     transition: 0.2s ease;
 }
+
+.final-score {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 520px;
+    color: #555;
+    font-size: 18px;
+    font-family: "Lato";
+    text-align: center;
+    padding: 10px;
+    width: 160px;
+    text-transform: uppercase;
+}
