@@ -190,9 +190,15 @@ button:focus {
     padding: 10px;
     width: 160px;
     text-transform: uppercase;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Setting outline to a color rather than none for accessibility purposes */
 .final-score:focus {
-    outline: #555;
+    outline: 1px solid transparent;
+}
+
+input:focus::placeholder {
+    color: transparent;
 }
