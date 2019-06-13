@@ -156,8 +156,8 @@ button:focus {
 
 .how-to {
     position: absolute;
-    bottom: 234px;
-    left: 457px;
+    top: 3.125rem;
+    right: 2.875rem;
     text-transform: uppercase;
     color: #ddd;
     font-size: 14px;
