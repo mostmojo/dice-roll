@@ -6,7 +6,7 @@
 - **But**, if the player rolls a 1, all his/her **round** score gets lost. After that, it's the next player's turn.
 - **Also**, if you get two 6s in a row, your global score will reset!
 - The player can choose to **Hold**, which means that his **round** score gets added to his **global** score. After that, it's the next player's turn
-- The first player to reach 100 points on **global** score wins the game
+- The first player to reach 100 points on **global** score wins the game. You get to pick what happens to the loser! 😂 Tequila shot? Down a beer? Go to the shop? Pints on the loser?
 - **Try it out [here](https://mostmojo.github.io/dice-roll/)** 🚀
 
 <p align="center">
