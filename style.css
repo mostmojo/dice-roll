@@ -182,13 +182,13 @@ button:focus {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 520px;
+    top: 32.5rem;
     color: #555;
     font-size: 12px;
     font-family: "Lato";
     text-align: center;
     padding: 10px;
-    width: 160px;
+    width: 10rem;
     text-transform: uppercase;
     border-radius: 4px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
@@ -203,5 +203,5 @@ input:focus::placeholder {
     color: transparent;
 }
 
-#dice-1 { top: 120px; }
-#dice-2 { top: 250px; }
+#dice-1 { top: 7.5rem; }
+#dice-2 { top: 15.625rem; }
