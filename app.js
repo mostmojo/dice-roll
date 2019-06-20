@@ -2,7 +2,23 @@ var scores, roundScore, activePlayer, gamePlaying;
 
 init();
 
-document.querySelector('.btn-roll').addEventListener('click', function() {
+// Roll dice (using mouse click or spacebar)
+document.querySelector('.btn-roll').addEventListener('click', rollDice);
+window.addEventListener('keydown', function(event) {
+	if (event.keyCode === 32) {
+		rollDice();
+	}
+});
+
+// Hold dice (using mouse click or Enter key)
+document.querySelector('.btn-hold').addEventListener('click', holdDice);
+window.addEventListener('keydown', function(event) {
+	if (event.keyCode === 13) {
+		holdDice();
+	}
+});
+
+function rollDice() {
 	if (gamePlaying) {
 		// 1. Random number
 		var dice = Math.floor(Math.random() * 6) + 1;
@@ -20,9 +36,9 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
 			nextPlayer();
 		}
 	}
-});
+}
 
-document.querySelector('.btn-hold').addEventListener('click', function() {
+function holdDice() {
 	if (gamePlaying) {
 		// Add CURRENT score to GLOBAL score
 		scores[activePlayer] += roundScore;
@@ -40,7 +56,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
 			nextPlayer();
 		}
 	}
-});
+}
 
 function nextPlayer() {
 	// Next player
