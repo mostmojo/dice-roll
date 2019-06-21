@@ -38,7 +38,7 @@ function rollDice() {
 			document.querySelector('#current-' + activePlayer).textContent = roundScore;
 		} else {
 			// Next player
-			nextPlayer();
+			setTimeout(function(){ nextPlayer(); }, 1100);
 		}
 	}
 }
