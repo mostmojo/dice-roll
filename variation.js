@@ -2,11 +2,24 @@ var scores, roundScore, activePlayer, gamePlaying;
 
 init();
 
-// var lastDice; // Needs to be in global scope because data gets lost in function scope.
+// Roll dice (using mouse click or spacebar)
+document.querySelector('.btn-roll').addEventListener('click', rollDice);
+window.addEventListener('keydown', function(event) {
+	if (event.keyCode === 32) {
+		rollDice();
+	}
+});
+
+// Hold dice (using mouse click or Enter key)
+document.querySelector('.btn-hold').addEventListener('click', holdDice);
+window.addEventListener('keydown', function(event) {
+	if (event.keyCode === 13) {
+		holdDice();
+	}
+});
 
 // --- DICE ROLL --- //
-
-document.querySelector('.btn-roll').addEventListener('click', function() {
+function rollDice() {
 	if (gamePlaying) {
 		// 1. Random number
 		var dice1 = Math.floor(Math.random() * 6) + 1;
@@ -27,28 +40,11 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
 			// Next player
 			nextPlayer();
 		}
-
-		// if (dice === 6 && lastDice === 6) {
-		//     // Player loses entire score
-		//     scores[activePlayer] = 0; // in memory
-		//     document.querySelector("#score-" + activePlayer).textContent = "0"; // in DOM to render to browser
-		//     nextPlayer();
-		// } else if (dice !== 1) {
-		//     // Add score
-		//     roundScore += dice;
-		//     document.querySelector("#current-" + activePlayer).textContent = roundScore;
-		// } else {
-		//     // Next player
-		//     nextPlayer();
-		// }
-
-		// lastDice = dice;
 	}
-});
+}
 
 // --- DICE HOLD --- //
-
-document.querySelector('.btn-hold').addEventListener('click', function() {
+function holdDice() {
 	if (gamePlaying) {
 		// Add CURRENT score to GLOBAL score
 		scores[activePlayer] += roundScore;
@@ -80,10 +76,9 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
 			nextPlayer();
 		}
 	}
-});
+}
 
 // --- NEXT PLAYER --- //
-
 function nextPlayer() {
 	// Next player
 	activePlayer === 0 ? (activePlayer = 1) : (activePlayer = 0);
@@ -104,7 +99,6 @@ function nextPlayer() {
 document.querySelector('.btn-new').addEventListener('click', init);
 
 // --- START GAME --- //
-
 function init() {
 	scores = [0, 0];
 	activePlayer = 0;
