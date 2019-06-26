@@ -2,20 +2,16 @@ var scores, roundScore, activePlayer, gamePlaying;
 
 init();
 
-// Roll dice (using mouse click or spacebar)
 document.querySelector('.btn-roll').addEventListener('click', rollDice);
-window.addEventListener('keydown', function(event) {
-	if (event.keyCode === 32) {
-		rollDice();
-	}
-});
-
-// Hold dice (using mouse click or Enter key)
 document.querySelector('.btn-hold').addEventListener('click', holdDice);
+
+
 window.addEventListener('keydown', function(event) {
-	if (event.keyCode === 13) {
-		holdDice();
-	}
+    if (event.keyCode === 32) {
+        rollDice();
+    } else if (event.keyCode === 13) {
+        holdDice();
+    }
 });
 
 // --- DICE ROLL --- //
