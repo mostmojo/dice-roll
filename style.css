@@ -159,10 +159,10 @@ button:focus {
     top: 3.125rem;
     right: 2.875rem;
     text-transform: uppercase;
-    color: #ddd;
+    color: #cdcbcb;
     font-size: 14px;
     text-align: center;
-    font-weight: 300;
+    font-weight: 600;
     cursor: pointer;
     letter-spacing: 1.2px;
 }
