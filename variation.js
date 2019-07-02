@@ -5,11 +5,13 @@ init();
 // Roll dice (using mouse click or spacebar)
 document.querySelector('.btn-roll').addEventListener('click', rollDice);
 document.querySelector('.btn-hold').addEventListener('click', holdDice);
-window.addEventListener('keypress', function(event) {
+document.addEventListener('keyup', function(event) {
 	if (event.key === ' ') {
 		rollDice();
 	} else if (event.key === 'Enter') {
 		holdDice();
+	} else if (event.key === '1') {
+		init();
 	}
 });
 
@@ -68,7 +70,7 @@ function holdDice() {
 			gamePlaying = false;
 		} else {
 			// Next player
-			nextPlayer();
+			setTimeout(function(){ nextPlayer(); }, 800);
 		}
 	}
 }
@@ -92,6 +94,7 @@ function nextPlayer() {
 }
 // Don't add init() as we only want function to be called on btn-new click. Pass it as a param without ().
 document.querySelector('.btn-new').addEventListener('click', init);
+
 
 // --- START GAME --- //
 function init() {

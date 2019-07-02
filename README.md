@@ -8,7 +8,7 @@
 - The first player to reach 100 points on **global** score wins the game. You get to pick what happens to the loser! 😂 Tequila shot? Down a beer? Go to the shop? Pint(s) on them?
 - Don't want to play to 100 points? Set winning score to something greater or less than 100. Ex. 20, and hit roll dice to start with new cap.
 
-- **TIP**: Use **spacebar** to *roll dice* and **enter** to *hold* if you don't want to use the mouse or trackpad 😉.
+- **TIP**: Use **spacebar** to *roll dice* and **enter** to *hold* and `1` to start `new game`, if you don't want to use the mouse or trackpad 😉.
 - **Try it out [here](https://mostmojo.github.io/dice-roll/)** 🚀
 
 <p align="center">
